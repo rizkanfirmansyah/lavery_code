@@ -63,61 +63,61 @@
     background-color: #FAFAFA;
 }
 
-.additional{
+.additional {
     font-family: 'Heebo', sans-serif;
 }
 
-.title{
+.title {
     font-weight: bold;
 }
 
-.subtitle{
-    color:#bbbbbb;
+.subtitle {
+    color: #bbbbbb;
 }
 
-.title-additional{
+.title-additional {
     font-size: 22;
     font-weight: bold;
 }
 
-.subtitle-additional{
+.subtitle-additional {
     font-size: 14;
     color: #bbbbbb;
 }
 
-.services img{
-    width:60px;
-    height:60px;
+.services img {
+    width: 60px;
+    height: 60px;
 }
 
-.services .title-services{
+.services .title-services {
     font-size: 20px;
     font-family: 'Heebo', sans-serif;
     font-weight: bold;
 }
 
-.services .subtitle-services{
+.services .subtitle-services {
     font-size: 14px;
     font-family: 'Heebo', sans-serif;
 }
 
-.services .card{
+.services .card {
     border: none;
     border-bottom: 8px solid #ddd;
 }
 
-.services .service{
+.services .service {
     background-image: url('../img/services/wm.svg');
     background-repeat: no-repeat;
 }
 
-.services .service-2{
+.services .service-2 {
     background-image: url('../img/services/wm.svg');
     background-repeat: no-repeat;
     background-position: right;
 }
 
-.testimonials img{
+.testimonials img {
     width: 75px;
 }
 
@@ -125,7 +125,7 @@
     font-family: 'Heebo', sans-serif;
 }
 
-.testimonials .card{
+.testimonials .card {
     border: none;
 }
 
@@ -140,7 +140,7 @@
     font-weight: 700;
 }
 
-.testimonials .desc{
+.testimonials .desc {
     font-size: 14px;
     color: #bbbbbb;
 }
@@ -148,6 +148,41 @@
 .testimonials .desc::before {
     content: open-quote;
 }
+
 .testimonials .desc::after {
     content: close-quote;
+}
+
+footer {
+    background-color: #32CB95;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+footer .title {
+    font-family: 'Heebo', sans-serif;
+}
+
+footer .icon img {
+    width: 25px;
+}
+
+footer .icon a {
+    margin-right: 10px;
+}
+
+footer .title-footer{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer li{
+    list-style: none;
+    margin-left: -30px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+footer .copyright {
+    font-size: 16px;
 }
