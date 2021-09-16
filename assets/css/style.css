@@ -1,0 +1,86 @@
+.navbar {
+    font-family: 'Heebo', sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.navbar .navbar-collapse .nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.navbar .button button {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.background-color-primary {
+    background-color: #32CB95;
+    color: white;
+}
+
+.text-color-primary {
+    color: #32CB95;
+}
+
+.text-color-secondary {
+    color: #F4F0F1;
+}
+
+.background-color-secondary {
+    background-color: #F4F0F1;
+    color: #bbbbbb;
+}
+
+.container .row .title-container {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.text-tagline {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.btn-started {
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+}
+
+#jumbotron {
+    background-color: #FAFAFA;
+}
+
+.services{
+    font-family: 'Heebo', sans-serif;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.subtitle{
+    color:#bbbbbb;
+}
+
+.title-services{
+    font-size: 22;
+    font-weight: bold;
+}
+
+.subtitle-services{
+    font-size: 14;
+    color: #bbbbbb;
+}
