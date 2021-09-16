@@ -116,3 +116,38 @@
     background-repeat: no-repeat;
     background-position: right;
 }
+
+.testimonials img{
+    width: 75px;
+}
+
+.testimonials {
+    font-family: 'Heebo', sans-serif;
+}
+
+.testimonials .card{
+    border: none;
+}
+
+.testimonials .nickname {
+    font-size: 18;
+    font-weight: bold;
+}
+
+.testimonials .jobdesk {
+    color: #bbbbbb;
+    font-size: 14;
+    font-weight: 700;
+}
+
+.testimonials .desc{
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.testimonials .desc::before {
+    content: open-quote;
+}
+.testimonials .desc::after {
+    content: close-quote;
+}
