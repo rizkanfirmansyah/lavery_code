@@ -22,13 +22,6 @@
 
     <title>Lavery - Laundry Delivery</title>
 
-    <script>
-        $(document).ready(function () {
-            setTimeout(() => {
-                $(".preloader").fadeOut();
-            }, 2000);
-        })
-    </script>
 </head>
 
 <body>
@@ -92,7 +85,7 @@
                         with a good solution
                     </small><br>
 
-                    <button class="btn background-color-primary btn-started mt-3 px-4 py-2">Get Started</button>
+                    <button class="btn background-color-primary btn-started mt-3 px-4 py-2" data-anijs="if: mouseover, do: pulse animated" >Get Started</button>
                 </div>
                 <div class="col-lg-8">
                     <img src="assets/img/image_container.svg" class="img-fluid float-end" alt="ini gambar">
@@ -304,6 +297,14 @@
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
+
+    <script>
+        $(document).ready(function () {
+            setTimeout(() => {
+                $(".preloader").fadeOut();
+            }, 2000);
+        })
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
