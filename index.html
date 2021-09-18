@@ -17,11 +17,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
 
     <title>Lavery - Laundry Delivery</title>
+
+    <script>
+        $(document).ready(function () {
+            setTimeout(() => {
+                $(".preloader").fadeOut();
+            }, 2000);
+        })
+    </script>
 </head>
 
 <body>
+
+
+    <div class="preloader">
+        <div class="loading text-center">
+            <img src="assets/img/poi.gif" width="150">
+            <p>Lavery</p>
+        </div>
+    </div>
 
     <div class="main">
 
@@ -52,9 +70,9 @@
             </nav>
         </div>
 
-        <div class="container mt-4">
+        <div class="container mt-4" id="jumbotron">
 
-            <div class="row" id="jumbotron">
+            <div class="row">
 
                 <div class="col-lg-4 my-auto p-4">
                     <div class="title-container text-color-primary">
@@ -94,19 +112,19 @@
                 <div class="row justify-content-arround mt-5 p-3">
 
                     <div class="col-lg-4 text-center">
-                        <img src="assets/img/services/notif.svg" class="img-fluid" alt="">
+                        <img src="assets/img/services/notif.svg" data-anijs="if:mouseover, do: pulse animated"  class="img-fluid" alt="">
                         <h5 class="title-additional mt-3">Convenient</h5>
                         <p class="subtitle-additional">It's very easy to access ourservices, you juststay at home and
                             call us</p>
                     </div>
                     <div class="col-lg-4 text-center">
-                        <img src="assets/img/services/laundry.svg" class="img-fluid" alt="">
+                        <img src="assets/img/services/laundry.svg" data-anijs="if:mouseover, do: tada animated"  class="img-fluid" alt="">
                         <h5 class="title-additional mt-3">Neat Packaging</h5>
                         <p class="subtitle-additional">Don't worry, your clothes will be packed neatly and smell like
                             new clothes</p>
                     </div>
                     <div class="col-lg-4 text-center">
-                        <img src="assets/img/services/delivery.svg" class="img-fluid" alt="">
+                        <img src="assets/img/services/delivery.svg" data-anijs="if:mouseover, do: bounceInLeft animated" class="img-fluid" alt="">
                         <h5 class="title-additional">Express</h5>
                         <p class="subtitle-additional">Time is our priority, quickly we will deliver your order
                             according to customer's request</p>
@@ -125,9 +143,9 @@
                 <p class="subtitle text-center">Some of our services are very useful for customers. <br> We support
                     everything that is asked directly by customers or input for our services</p>
 
-                <div class="row mt-lg-2 service pt-lg-3">
-                    <div class="col-lg-4 mt-3 mt-lg-5 ms-lg-5">
-                        <div class="card shadow px-3 py-4">
+                <div class="row mt-lg-2 service pt-lg-3" >
+                    <div class="col-lg-4 mt-3 mt-lg-5 ms-lg-5" data-anijs="if: scroll, on: window, do: bounceInRight animated, before: scrollReveal">
+                        <div class="card shadow px-3 py-4" data-anijs="if: mouseover, do: pulse animated" >
                             <div class="row">
                                 <div class="col-3">
                                     <img src="assets/img/services/iron.svg" class="img-fluid" alt="">
@@ -139,8 +157,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mt-3 mt-lg-5 ms-lg-5">
-                        <div class="card shadow px-3 py-4">
+                    <div class="col-lg-4 mt-3 mt-lg-5 ms-lg-5"  data-anijs="if: scroll, on: window, do: bounceInRight animated, before: scrollReveal">
+                        <div data-anijs="if: mouseover, do: pulse animated" class="card shadow px-3 py-4">
                             <div class="row">
                                 <div class="col-3">
                                     <img src="assets/img/services/laundry.svg" class="img-fluid" alt="">
@@ -155,8 +173,8 @@
                 </div>
 
                 <div class="row service-2 mt-lg-4 pb-lg-5 justify-content-end">
-                    <div class="col-lg-4 mt-3 mb-lg-5 me-lg-5">
-                        <div class="card shadow px-3 py-4">
+                    <div class="col-lg-4 mt-3 mb-lg-5 me-lg-5" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
+                        <div data-anijs="if: mouseover, do: pulse animated" class="card shadow px-3 py-4">
                             <div class="row">
                                 <div class="col-3">
                                     <img src="assets/img/services/dress.svg" class="img-fluid" alt="">
@@ -168,8 +186,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mt-3 mb-lg-5 me-lg-5">
-                        <div class="card shadow px-3 py-4">
+                    <div class="col-lg-4 mt-3 mb-lg-5 me-lg-5" data-anijs="if: scroll, on: window, do: bounceInLeft animated, before: scrollReveal">
+                        <div data-anijs="if: mouseover, do: pulse animated" class="card shadow px-3 py-4">
                             <div class="row">
                                 <div class="col-3">
                                     <img src="assets/img/services/delivery.svg" class="img-fluid" alt="">
@@ -197,8 +215,8 @@
 
                 <div class="row mt-5">
 
-                    <div class="col-lg-6">
-                        <div class="card shadow p-3 text-center">
+                    <div data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal" class="col-lg-6">
+                        <div data-anijs="if: mouseover, do: pulse animated" class="card shadow p-3 text-center">
                             <img src="assets/img/customers/Mask Group.png" class="img-fluid mx-auto rounded" alt="">
                             <h5 class="nickname">Rizkan Firmansyah</h5>
                             <small class="jobdesk">Full Stack Developer</small>
@@ -207,8 +225,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 mt-3 mt-lg-0">
-                        <div class="card shadow p-3 text-center">
+                    <div data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal" class="col-lg-6 mt-3 mt-lg-0">
+                        <div class="card shadow p-3 text-center" data-anijs="if: mouseover, do: pulse animated" >
                             <img src="assets/img/customers/Mask Group.png" class="img-fluid mx-auto rounded" alt="">
                             <h5 class="nickname">Rizkan Firmansyah</h5>
                             <small class="jobdesk">Full Stack Developer</small>
@@ -291,6 +309,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
+    <script src="assets/js/anijs.js"></script>
+    <script src="assets/js/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
